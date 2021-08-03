@@ -1,5 +1,5 @@
 {
-  "name": "webpack-boilerplate",
+  "name": "leaderboard",
   "private": "true",
   "version": "1.0.0",
   "description": "",
@@ -12,15 +12,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brenoxav/<project-name>.git"
+    "url": "git+https://github.com/brenoxav/leaderboard.git"
   },
   "keywords": [],
   "author": "Breno Xavier",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/brenoxav/<project-name>/issues"
+    "url": "https://github.com/brenoxav/leaderboard/issues"
   },
-  "homepage": "https://github.com/brenoxav/<project-name>#readme",
+  "homepage": "https://github.com/brenoxav/leaderboard#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.2.7",
