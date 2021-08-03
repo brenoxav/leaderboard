@@ -1,12 +1,14 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Leaderboard
 
-> One paragraph statement about the project.
+> A leaderboard website that displays scores submitted by different players and also allows you to submit your score.
 
 ![screenshot](./screenshot.png)
 
-Additional description about the project and its features.
+The leaderboard website displays scores submitted by different players and also allows you to submit your score.
+It showcases JavaScript Promisses and Async/Await functionalities.
+All data is preserved thanks to the external Leaderboard API service.
 
 ## Built With
 
@@ -16,7 +18,7 @@ Additional description about the project and its features.
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://brenoxav.github.io/leaderboard)
 
 
 ## Getting Started
@@ -66,13 +68,13 @@ You can either build a local production version of the project or open it direct
 
 - GitHub: [@brenoxav](https://github.com/brenoxav)
 - Twitter: [@brenoxav](https://twitter.com/brenoxav)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/brenoxav)
+- LinkedIn: [Breno Xavier](https://linkedin.com/in/brenoxav)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/brenoxav/leaderboard/issues).
 
 ## Show your support
 
@@ -80,6 +82,4 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+- Microverse
