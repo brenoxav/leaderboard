@@ -15,23 +15,17 @@
       <div class="scores-wrapper">
         <div>
           <h2>Recent Scores</h2>
-          <button type="button">Refresh</button>
+          <button class="btn-refresh" type="button">Refresh</button>
         </div>
         <ul class="score-list">
-          <li class="score-item">Maria: 999</li>
-          <li class="score-item">Pavel: 890</li>
-          <li class="score-item">Yin: 750</li>
-          <li class="score-item">Juan: 500</li>
-          <li class="score-item">José: 120</li>
-          <li class="score-item">Nadia: 60</li>
         </ul>
       </div>
       <div class="form-wrapper">
         <h2>Add Your Score</h2>
         <form class="score-form" action="post">
-          <input type="text" placeholder="Your name">
-          <input type="text" placeholder="Your score">
-          <button type="submit">Submit</button>
+          <input class="input-name" type="text" placeholder="Your name">
+          <input class="input-score" type="number" placeholder="Your score" min="0">
+          <button class="btn-submit" type="button">Submit</button>
         </form>
       </div>
     </div>
