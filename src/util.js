@@ -5,8 +5,32 @@ const inputName = document.querySelector('.input-name');
 const inputScore = document.querySelector('.input-score');
 
 const compareScores = (a, b) => {
-  return (a.score > b.score) ? -1 : ((a.score < b.score) ? 1 : 0);
-}
+  if (a.score > b.score) {
+    return -1;
+  }
+  if (a.score < b.score) {
+    return 1;
+  }
+  return 0;
+};
+
+const padScore = (score) => {
+  let scoreNum = parseInt(score, 10);
+  if (scoreNum && scoreNum > 0) {
+    scoreNum = scoreNum.toString().substring(0, 6);
+  } else {
+    scoreNum = 0;
+  }
+  return scoreNum.toString().padStart(6, 0);
+};
+
+const trimUsername = (user) => {
+  let userStr = user;
+  if (userStr.length > 12) {
+    userStr = userStr.substring(0, 12);
+  }
+  return userStr;
+};
 
 const renderList = () => {
   scoreList.innerHTML = '';
@@ -17,8 +41,8 @@ const renderList = () => {
       scoresArr.forEach((score, index) => {
         scoreList.innerHTML += `
           <li class="score-item${index % 2 === 0 ? ' item-shade' : ''}">
-            <span class="item-user">${score.user}</span>
-            <span class="item-score">${score.score}</span>
+            <span class="item-user">${trimUsername(score.user)}</span>
+            <span class="item-score">${padScore(score.score)}</span>
           </li>
         `;
       });
