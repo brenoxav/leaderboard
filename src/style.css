@@ -119,6 +119,8 @@ body {
     “Droid Sans”,
     “Helvetica Neue”,
     sans-serif;
+  color: #fffc;
+  background-color: #448;
 }
 
 ol,
@@ -149,14 +151,38 @@ table {
 h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+  border-bottom: 4px solid #fffc;
 }
 
 h2 {
   font-size: 2rem;
+  padding: 0.5rem 0;
 }
 
 input {
   margin-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #fff;
+  border: 2px solid #d48;
+  background-color: transparent;
+  padding: 0.5rem;
+}
+
+.btn {
+  padding: 0.5rem;
+  border: 2px solid #d48;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #d48;
+  background-color: transparent;
+}
+
+.btn:hover {
+  color: #448;
+  background-color: #d48;
 }
 
 .container {
@@ -192,13 +218,36 @@ input {
 }
 
 .score-list {
-  border: 1px solid #000;
+  max-height: 60vh;
+  overflow-y: auto;
+  border: 2px solid #d48;
 }
 
 .score-item {
+  display: flex;
+  justify-content: space-between;
   padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #d48;
 }
 
 .item-shade {
-  background-color: #eee;
+  background-color: #559;
+}
+
+@media screen and (max-width: 480px) {
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .scores-wrapper,
+  .form-wrapper {
+    padding: 1rem;
+  }
 }
